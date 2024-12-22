@@ -1,0 +1,13 @@
+{% set intro = g.site_intro_text %}
+
+<div class="module-promotion card box">
+  <div>
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1 class="page-heading">{{ _("Bievenido al Portal Nacional de Datos Abiertos de Honduras") }}</h1>
+      <p>
+      </p>
+    {% endif %}
+  </div>
+</div>
